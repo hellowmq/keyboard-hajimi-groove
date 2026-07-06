@@ -1,0 +1,343 @@
+{
+  "name": "shortcut-local-drops",
+  "displayName": "本地快捷键掉宝器",
+  "description": "使用 Samples/hajimi-local/segment-plan.json 按曲目结构裁剪的本地哈基米掉宝音效。",
+  "sampleClips": [
+    {
+      "id": "drop-copy",
+      "title": "蓝莲哈 Copy Hook",
+      "artist": "蓝莲哈",
+      "filePath": "Samples/hajimi-local/clips/drop-copy-lanlianha.m4a",
+      "startTime": 0,
+      "duration": 10.6,
+      "volume": 0.95
+    },
+    {
+      "id": "drop-cut",
+      "title": "打火基 Cut Hit",
+      "artist": "打火基",
+      "filePath": "Samples/hajimi-local/clips/drop-cut-dahuoji.m4a",
+      "startTime": 0,
+      "duration": 13.2,
+      "volume": 0.95
+    },
+    {
+      "id": "drop-paste",
+      "title": "曼波 Paste Phrase",
+      "artist": "曼波、曼波、有时哈基米",
+      "filePath": "Samples/hajimi-local/clips/drop-paste-mambo.m4a",
+      "startTime": 0,
+      "duration": 4.6,
+      "volume": 0.95
+    },
+    {
+      "id": "drop-undo",
+      "title": "最后一哈 Undo Tail",
+      "artist": "最后一哈",
+      "filePath": "Samples/hajimi-local/clips/drop-undo-last-ha.m4a",
+      "startTime": 0,
+      "duration": 4.8,
+      "volume": 0.9
+    },
+    {
+      "id": "drop-redo",
+      "title": "神曼波 Redo Rise",
+      "artist": "神曼波",
+      "filePath": "Samples/hajimi-local/clips/drop-redo-shenmambo.m4a",
+      "startTime": 0,
+      "duration": 6.4,
+      "volume": 0.9
+    },
+    {
+      "id": "drop-save",
+      "title": "万恶之源 Save Stamp",
+      "artist": "万恶之源",
+      "filePath": "Samples/hajimi-local/clips/drop-save-origin.m4a",
+      "startTime": 0,
+      "duration": 7,
+      "volume": 0.9
+    },
+    {
+      "id": "drop-find",
+      "title": "基米说 Find Phrase",
+      "artist": "基米说",
+      "filePath": "Samples/hajimi-local/clips/drop-find-jimishuo.m4a",
+      "startTime": 0,
+      "duration": 13,
+      "volume": 0.86
+    },
+    {
+      "id": "drop-select",
+      "title": "万恶之源2 Select Phrase",
+      "artist": "万恶之源2",
+      "filePath": "Samples/hajimi-local/clips/drop-select-origin2.m4a",
+      "startTime": 0,
+      "duration": 3.8,
+      "volume": 0.86
+    },
+    {
+      "id": "drop-palette",
+      "title": "太空曼波 Palette Phrase",
+      "artist": "太空曼波",
+      "filePath": "Samples/hajimi-local/clips/drop-palette-space-mambo.m4a",
+      "startTime": 0,
+      "duration": 6.4,
+      "volume": 0.9
+    },
+    {
+      "id": "drop-new",
+      "title": "来去曼波 New Phrase",
+      "artist": "来去曼波",
+      "filePath": "Samples/hajimi-local/clips/drop-new-laiqu.m4a",
+      "startTime": 0,
+      "duration": 10,
+      "volume": 0.86
+    },
+    {
+      "id": "drop-close",
+      "title": "不再曼波 Close Phrase",
+      "artist": "不再曼波",
+      "filePath": "Samples/hajimi-local/clips/drop-close-buzai.m4a",
+      "startTime": 0,
+      "duration": 9,
+      "volume": 0.86
+    },
+    {
+      "id": "drop-function",
+      "title": "野哈飞舞 Function Hit",
+      "artist": "野哈飞舞",
+      "filePath": "Samples/hajimi-local/clips/drop-function-yeha.m4a",
+      "startTime": 0,
+      "duration": 10.2,
+      "volume": 0.84
+    },
+    {
+      "id": "drop-switch",
+      "title": "2.23AM Switch Phrase",
+      "artist": "2.23AM",
+      "filePath": "Samples/hajimi-local/clips/drop-switch-223am.m4a",
+      "startTime": 0,
+      "duration": 10.6,
+      "volume": 0.84
+    }
+  ],
+  "shortcutBindings": [
+    {
+      "id": "command-c-copy",
+      "title": "Command+C Copy",
+      "keyCode": 8,
+      "modifiers": [
+        "command"
+      ],
+      "sampleClipID": "drop-copy",
+      "sampleVolume": 1
+    },
+    {
+      "id": "command-x-cut",
+      "title": "Command+X Cut",
+      "keyCode": 7,
+      "modifiers": [
+        "command"
+      ],
+      "sampleClipID": "drop-cut",
+      "sampleVolume": 1
+    },
+    {
+      "id": "command-v-paste",
+      "title": "Command+V Paste",
+      "keyCode": 9,
+      "modifiers": [
+        "command"
+      ],
+      "sampleClipID": "drop-paste",
+      "sampleVolume": 1
+    },
+    {
+      "id": "command-z-undo",
+      "title": "Command+Z Undo",
+      "keyCode": 6,
+      "modifiers": [
+        "command"
+      ],
+      "sampleClipID": "drop-undo",
+      "sampleVolume": 1
+    },
+    {
+      "id": "command-shift-z-redo",
+      "title": "Command+Shift+Z Redo",
+      "keyCode": 6,
+      "modifiers": [
+        "command",
+        "shift"
+      ],
+      "sampleClipID": "drop-redo",
+      "sampleVolume": 0.92
+    },
+    {
+      "id": "command-s-save",
+      "title": "Command+S Save",
+      "keyCode": 1,
+      "modifiers": [
+        "command"
+      ],
+      "sampleClipID": "drop-save",
+      "sampleVolume": 0.95
+    },
+    {
+      "id": "command-a-select-all",
+      "title": "Command+A Select All",
+      "keyCode": 0,
+      "modifiers": [
+        "command"
+      ],
+      "sampleClipID": "drop-select",
+      "sampleVolume": 0.86
+    },
+    {
+      "id": "command-f-find",
+      "title": "Command+F Find",
+      "keyCode": 3,
+      "modifiers": [
+        "command"
+      ],
+      "sampleClipID": "drop-find",
+      "sampleVolume": 0.95
+    },
+    {
+      "id": "command-p-palette/print",
+      "title": "Command+P Palette/Print",
+      "keyCode": 35,
+      "modifiers": [
+        "command"
+      ],
+      "sampleClipID": "drop-palette",
+      "sampleVolume": 0.9
+    },
+    {
+      "id": "command-n-new",
+      "title": "Command+N New",
+      "keyCode": 45,
+      "modifiers": [
+        "command"
+      ],
+      "sampleClipID": "drop-new",
+      "sampleVolume": 0.9
+    },
+    {
+      "id": "command-w-close",
+      "title": "Command+W Close",
+      "keyCode": 13,
+      "modifiers": [
+        "command"
+      ],
+      "sampleClipID": "drop-close",
+      "sampleVolume": 0.9
+    },
+    {
+      "id": "command-tab-switch",
+      "title": "Command+Tab Switch",
+      "keyCode": 48,
+      "modifiers": [
+        "command"
+      ],
+      "sampleClipID": "drop-switch",
+      "sampleVolume": 0.9
+    },
+    {
+      "id": "f1",
+      "title": "F1",
+      "keyCode": 122,
+      "modifiers": [],
+      "sampleClipID": "drop-function",
+      "sampleVolume": 0.82
+    },
+    {
+      "id": "f2",
+      "title": "F2",
+      "keyCode": 120,
+      "modifiers": [],
+      "sampleClipID": "drop-function",
+      "sampleVolume": 0.82
+    },
+    {
+      "id": "f3",
+      "title": "F3",
+      "keyCode": 99,
+      "modifiers": [],
+      "sampleClipID": "drop-function",
+      "sampleVolume": 0.82
+    },
+    {
+      "id": "f4",
+      "title": "F4",
+      "keyCode": 118,
+      "modifiers": [],
+      "sampleClipID": "drop-function",
+      "sampleVolume": 0.82
+    },
+    {
+      "id": "f5",
+      "title": "F5",
+      "keyCode": 96,
+      "modifiers": [],
+      "sampleClipID": "drop-function",
+      "sampleVolume": 0.82
+    },
+    {
+      "id": "f6",
+      "title": "F6",
+      "keyCode": 97,
+      "modifiers": [],
+      "sampleClipID": "drop-function",
+      "sampleVolume": 0.82
+    },
+    {
+      "id": "f7",
+      "title": "F7",
+      "keyCode": 98,
+      "modifiers": [],
+      "sampleClipID": "drop-function",
+      "sampleVolume": 0.82
+    },
+    {
+      "id": "f8",
+      "title": "F8",
+      "keyCode": 100,
+      "modifiers": [],
+      "sampleClipID": "drop-function",
+      "sampleVolume": 0.82
+    },
+    {
+      "id": "f9",
+      "title": "F9",
+      "keyCode": 101,
+      "modifiers": [],
+      "sampleClipID": "drop-function",
+      "sampleVolume": 0.82
+    },
+    {
+      "id": "f10",
+      "title": "F10",
+      "keyCode": 109,
+      "modifiers": [],
+      "sampleClipID": "drop-function",
+      "sampleVolume": 0.82
+    },
+    {
+      "id": "f11",
+      "title": "F11",
+      "keyCode": 103,
+      "modifiers": [],
+      "sampleClipID": "drop-function",
+      "sampleVolume": 0.82
+    },
+    {
+      "id": "f12",
+      "title": "F12",
+      "keyCode": 111,
+      "modifiers": [],
+      "sampleClipID": "drop-function",
+      "sampleVolume": 0.82
+    }
+  ]
+}

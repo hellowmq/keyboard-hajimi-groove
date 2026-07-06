@@ -1,0 +1,21 @@
+.DS_Store
+/.build
+/Packages
+xcuserdata/
+DerivedData/
+.swiftpm/configuration/registries.json
+.swiftpm/xcode/package.xcworkspace/contents.xcworkspacedata
+.netrc
+
+# Local/copyrighted audio assets generated or supplied by the user.
+Samples/hajimi-local/raw/*
+Samples/hajimi-local/clips/*
+!Samples/hajimi-local/raw/.gitkeep
+!Samples/hajimi-local/clips/.gitkeep
+
+# Local recordings and preview exports.
+Recordings/*
+!Recordings/.gitkeep
+
+# Runtime logs
+*.log

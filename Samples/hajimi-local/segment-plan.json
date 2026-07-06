@@ -1,0 +1,163 @@
+{
+  "description": "按曲目结构手工策划的快捷键掉宝切片。start/duration 应根据实际听感继续微调，而不是统一时长。",
+  "segments": [
+    {
+      "id": "drop-copy",
+      "title": "蓝莲哈 Copy Hook",
+      "source": "蓝莲哈.WAV",
+      "start": 0,
+      "duration": 10.6,
+      "fadeIn": 0.04,
+      "fadeOut": 0.35,
+      "volume": 0.95,
+      "output": "Samples/hajimi-local/clips/drop-copy-lanlianha.m4a"
+    },
+    {
+      "id": "drop-cut",
+      "title": "打火基 Cut Hit",
+      "source": "打火基.WAV",
+      "start": 0,
+      "duration": 13.2,
+      "fadeIn": 0.04,
+      "fadeOut": 0.25,
+      "volume": 0.95,
+      "output": "Samples/hajimi-local/clips/drop-cut-dahuoji.m4a"
+    },
+    {
+      "id": "drop-paste",
+      "title": "曼波 Paste Phrase",
+      "source": "曼波、曼波、有时哈基米.WAV",
+      "start": 0,
+      "duration": 4.6,
+      "fadeIn": 0.04,
+      "fadeOut": 0.45,
+      "volume": 0.95,
+      "output": "Samples/hajimi-local/clips/drop-paste-mambo.m4a"
+    },
+    {
+      "id": "drop-undo",
+      "title": "最后一哈 Undo Tail",
+      "source": "最后一哈.WAV",
+      "start": 0,
+      "duration": 4.8,
+      "fadeIn": 0.04,
+      "fadeOut": 0.35,
+      "volume": 0.9,
+      "output": "Samples/hajimi-local/clips/drop-undo-last-ha.m4a"
+    },
+    {
+      "id": "drop-redo",
+      "title": "神曼波 Redo Rise",
+      "source": "神曼波.WAV",
+      "start": 0,
+      "duration": 6.4,
+      "fadeIn": 0.04,
+      "fadeOut": 0.45,
+      "volume": 0.9,
+      "output": "Samples/hajimi-local/clips/drop-redo-shenmambo.m4a"
+    },
+    {
+      "id": "drop-save",
+      "title": "万恶之源 Save Stamp",
+      "source": "万恶之源.WAV",
+      "start": 0,
+      "duration": 7,
+      "fadeIn": 0.04,
+      "fadeOut": 0.3,
+      "volume": 0.9,
+      "output": "Samples/hajimi-local/clips/drop-save-origin.m4a"
+    },
+    {
+      "id": "drop-find",
+      "title": "基米说 Find Phrase",
+      "source": "基米说.WAV",
+      "start": 0,
+      "duration": 13,
+      "fadeIn": 0.04,
+      "fadeOut": 0.05,
+      "volume": 0.86,
+      "output": "Samples/hajimi-local/clips/drop-find-jimishuo.m4a"
+    },
+    {
+      "id": "drop-select",
+      "title": "万恶之源2 Select Phrase",
+      "source": "万恶之源2.WAV",
+      "start": 0,
+      "duration": 3.8,
+      "fadeIn": 0.04,
+      "fadeOut": 0.35,
+      "volume": 0.86,
+      "output": "Samples/hajimi-local/clips/drop-select-origin2.m4a"
+    },
+    {
+      "id": "drop-palette",
+      "title": "太空曼波 Palette Phrase",
+      "source": "太空曼波.WAV",
+      "start": 0.0,
+      "duration": 6.4,
+      "fadeIn": 0.04,
+      "fadeOut": 0.45,
+      "volume": 0.9,
+      "output": "Samples/hajimi-local/clips/drop-palette-space-mambo.m4a"
+    },
+    {
+      "id": "drop-new",
+      "title": "来去曼波 New Phrase",
+      "source": "来去曼波.WAV",
+      "start": 0,
+      "duration": 10,
+      "fadeIn": 0.04,
+      "fadeOut": 0.35,
+      "volume": 0.86,
+      "output": "Samples/hajimi-local/clips/drop-new-laiqu.m4a"
+    },
+    {
+      "id": "drop-close",
+      "title": "不再曼波 Close Phrase",
+      "source": "不再曼波.WAV",
+      "start": 0,
+      "duration": 9,
+      "fadeIn": 0.04,
+      "fadeOut": 0.3,
+      "volume": 0.86,
+      "output": "Samples/hajimi-local/clips/drop-close-buzai.m4a"
+    },
+    {
+      "id": "drop-function",
+      "title": "野哈飞舞 Function Hit",
+      "source": "野哈飞舞.WAV",
+      "start": 0,
+      "duration": 10.2,
+      "fadeIn": 0.04,
+      "fadeOut": 0.25,
+      "volume": 0.84,
+      "output": "Samples/hajimi-local/clips/drop-function-yeha.m4a"
+    },
+    {
+      "id": "drop-switch",
+      "title": "2.23AM Switch Phrase",
+      "source": "2.23AM.WAV",
+      "start": 0,
+      "duration": 10.6,
+      "fadeIn": 0.04,
+      "fadeOut": 0.35,
+      "volume": 0.84,
+      "output": "Samples/hajimi-local/clips/drop-switch-223am.m4a"
+    }
+  ],
+  "shortcutBindings": {
+    "cmd-c": "drop-copy",
+    "cmd-x": "drop-cut",
+    "cmd-v": "drop-paste",
+    "cmd-z": "drop-undo",
+    "cmd-shift-z": "drop-redo",
+    "cmd-s": "drop-save",
+    "cmd-a": "drop-select",
+    "cmd-f": "drop-find",
+    "cmd-p": "drop-palette",
+    "cmd-n": "drop-new",
+    "cmd-w": "drop-close",
+    "cmd-tab": "drop-switch",
+    "function": "drop-function"
+  }
+}

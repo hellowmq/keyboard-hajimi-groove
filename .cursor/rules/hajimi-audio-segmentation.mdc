@@ -1,0 +1,26 @@
+---
+description: Guidance for cutting Hajimi audio into musical shortcut/drop segments
+globs: Samples/hajimi-local/**,Themes/*drops*.json,Tools/recut_hajimi_segments.py
+alwaysApply: false
+---
+
+# Hajimi Audio Segmentation
+
+When creating initial cuts for Hajimi shortcut/drop sounds, prioritize musical phrase boundaries over uniform duration.
+
+- Do not cut all tracks to the same length. Each source track needs its own segment length based on its motif, hook, transition, or phrase ending.
+- Prefer starts at natural phrase entries: intro downbeat, recognizable hook, vocal entry, percussion hit, or clear motif start.
+- Prefer endings at phrase resolution: low-energy boundary, breath/space, cadence, reverb tail, or just before the next new phrase.
+- Use silence/low-energy gaps as evidence, not as the only rule. Many Hajimi sources have no true silence; use relative energy dips plus musical context.
+- Shortcut drops may be longer than typical UI sounds when the phrase needs it. A good range is roughly 3-13 seconds depending on the source.
+- Fade-out is for smoothing a natural phrase ending, not for hiding a bad cut through the middle of a melody or vocal.
+- Keep each shortcut’s sound identity stable: copy/cut/paste/save/find should map to distinct musical personalities, not random interchangeable snippets.
+- Store decisions in `Samples/hajimi-local/segment-plan.json`; regenerate clips with `make recut-hajimi-one ID=<segment-id>` or `make recut-hajimi`.
+
+Initial cut workflow:
+
+1. Listen to the first 10-20 seconds of the source, or scan for a stronger hook if the intro is weak.
+2. Pick a start at a clear musical entry.
+3. Extend duration until the motif feels complete.
+4. Use a short fade-in and a fade-out only at the phrase tail.
+5. Validate by triggering the shortcut, not just by inspecting waveform duration.
