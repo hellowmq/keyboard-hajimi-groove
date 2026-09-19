@@ -2,6 +2,8 @@
 
 Keyboard Hajimi Groove is a macOS status bar app that turns common work shortcuts into local Hajimi-style musical “loot drop” feedback.
 
+> Source release: the repository does not include audio tracks, a signed app bundle, or automatic updates. A fresh clone can build the app and verify shortcut handling, but audible feedback requires audio files you have the right to use.
+
 It is intentionally shortcut-first:
 
 - `Command+C`, `Command+V`, `Command+Z`, `Command+S`, `Command+F`, and similar workflow shortcuts can trigger short musical phrases.
@@ -18,6 +20,8 @@ It is intentionally shortcut-first:
 ## Quick Start
 
 ```sh
+git clone https://github.com/hellowmq/keyboard-hajimi-groove.git
+cd keyboard-hajimi-groove
 make doctor
 swift run keyboard-hajimi-groove
 ```
@@ -27,6 +31,12 @@ The app loads `Themes/shortcut-local-drops.json` by default and places a `哈` i
 On first launch, macOS may require Accessibility or Input Monitoring permission for the terminal app that starts the process.
 
 If no audio files are present yet, the app will still launch but shortcuts will print missing-sample warnings instead of playing audio.
+
+## Permission & privacy
+
+The app uses a listen-only macOS event tap to observe global key-down and modifier events, then matches only configured shortcuts for playback and local aggregate analysis. It does not block or rewrite input. Grant Accessibility or Input Monitoring only on a Mac you control; quit the app and revoke the permission when you no longer need it.
+
+The segment editor binds to `127.0.0.1` by default. Keep it local rather than exposing it to a public network. See [SECURITY.md](SECURITY.md) for private reporting guidance.
 
 ## Local Audio Assets
 
@@ -101,4 +111,4 @@ Use `make validate-hajimi` only when local raw/clipped audio assets exist.
 
 ## License
 
-Code is released under the MIT License. Audio assets are not included and remain subject to their own rights.
+Code is released under the [MIT License](LICENSE). Audio assets are not included and remain subject to their own rights.
