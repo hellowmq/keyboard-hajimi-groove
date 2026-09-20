@@ -1,5 +1,7 @@
 # Keyboard Hajimi Groove
 
+[简体中文](README.zh-CN.md) | English
+
 Keyboard Hajimi Groove is a macOS status bar app that turns common work shortcuts into local Hajimi-style musical “loot drop” feedback.
 
 > Source release: the repository does not include audio tracks, a signed app bundle, or automatic updates. A fresh clone can build the app and verify shortcut handling, but audible feedback requires audio files you have the right to use.
@@ -14,7 +16,8 @@ It is intentionally shortcut-first:
 ## Requirements
 
 - macOS 14+
-- Swift 6+
+- Swift 6.3+
+- Python 3 for the local segment tools
 - `ffmpeg` for cutting local audio segments
 
 ## Quick Start
